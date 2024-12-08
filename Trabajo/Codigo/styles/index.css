@@ -1,0 +1,379 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: auto;
+}
+
+main .principal {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 75%;
+    margin: auto;
+    justify-content: center;
+}
+
+main .principal .contenido {
+    width: 40%;
+    align-self: flex-start;
+}
+
+main .principal .contenido button {
+    margin: 10px 0;
+}
+
+main .principal .thumb img {
+    width: 100%;
+    display: block;
+}
+
+main .programas {
+    width: 60%;
+    margin: auto;
+}
+
+main .programas .titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main .programas .programas-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+main .programas .programas-container .programa {
+    background-color: #0D0D0D;
+    width: 30%;
+    padding: 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main .programas .programas-container .programa i {
+    color: #097FD9;
+    transition: color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+main .programas .programas-container .programa:hover {
+    background-color: #097FD9;
+}
+
+main .programas .programas-container .programa:hover .texto-secundario {
+    color: white;
+}
+
+main .programas .programas-container .programa:hover i {
+    color: white;
+}
+
+main .planes {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    color: white;
+}
+
+main .planes .thumb {
+    flex: 1;
+}
+
+main .planes .thumb img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+main .planes .contenido {
+    flex: 1;
+}
+
+main .planes .contenido .titulo {
+    margin-bottom: 20px;
+}
+
+main .planes .contenido ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+main .planes .contenido ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+main .planes .contenido ul li::before {
+    content: '\2714';
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    color: #097FD9;
+}
+
+main .planes .contenido .botones {
+    display: flex;
+    gap: 15px;
+}
+
+main .horarios {
+    background-color: #097FD9;
+    padding: 30px;
+    border-radius: 12px;
+    margin: auto;
+    width: 60%;
+}
+
+main .horarios .titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main .horarios table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+main .horarios table thead {
+    background-color: black;
+}
+
+main .horarios table th,
+main .horarios table td {
+    text-align: center;
+    padding: 10px;
+}
+
+main .horarios table tbody tr:nth-child(even) {
+    background-color: #848383;
+}
+
+main .horarios table tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+main .horarios table tbody td {
+    color: black;
+}
+
+main .contacto {
+    background-color: #097FD9;
+    padding: 15px 30px 30px 30px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+main .contacto .form-header .titulo {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+main .contacto form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .contacto form .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+main .contacto form .form-group .input-field {
+    flex: 1;
+}
+
+main .contacto form .form-group .input-field label {
+    display: block;
+    color: black;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+main .contacto form .form-group .input-field .radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+main .contacto form .form-group .input-field textarea {
+    resize: none;
+    height: 100px;
+}
+
+main .contacto form button {
+    background-color: black;
+    border: none;
+    align-self: flex-start;
+}
+
+main .contacto form button:hover {
+    background-color: #444444;
+}
+
+@media screen and (max-width: 1400px) {
+    main .programas {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    main .principal {
+        width: 90%;
+    }
+
+    main .programas {
+        width: 95%;
+    }
+
+    main .horarios {
+        width: 80%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main .principal {
+        width: 75%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main .principal .contenido,
+    main .principal .thumb img {
+        width: 100%;
+    }
+
+    main .programas {
+        width: 80%;
+    }
+
+    main .programas .programas-container{
+        justify-content: center;
+        gap: 26px;
+    }
+
+    main .programas .programas-container .programa {
+        width: 100%;
+    }
+
+    main .planes {
+        flex-direction: column;
+    }
+
+    main .planes .thumb,
+    main .planes .contenido {
+        flex: none;
+        width: 100%;
+    }
+
+    main .horarios table th,
+    main .horarios table td {
+        text-align: center;
+        font-size: 0.75rem;
+        padding: 5px;
+    }
+
+    main .contacto form {
+        margin: auto;
+        padding: 15px;
+    }
+
+    main .contacto form .form-group {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main .horarios {
+        padding: 5px;
+    }
+
+    main .horarios table th,
+    main .horarios table td {
+        font-size: 0.65rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        gap: 30px;
+    }
+
+    main .principal {
+        gap: 20px;
+    }
+
+    main .principal .thumb img {
+        display: none;
+    }
+
+    main .planes {
+        gap: 20px;
+    }
+
+    main .planes .thumb img {
+        display: none;
+    }
+
+    main .horarios {
+        width: 95%;
+    }
+
+    main .horarios table th,
+    main .horarios table td {
+        font-size: 0.5rem;
+    }
+
+    main .contacto {
+        width: 90%;
+        padding: 15px;
+    }
+
+    main .contacto form {
+        margin: auto;
+        padding: 10px;
+    }
+
+    main .contacto form .form-group {
+        gap: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    textarea {
+        font-size: 0.9rem;
+    }
+
+    main .contacto form button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}

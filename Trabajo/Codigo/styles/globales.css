@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background-color: #090707;
+    line-height: 1.5;
+    font-family: "Poppins";
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+.texto-secundario {
+    color: #848383;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+a:hover{
+    border-bottom: 1px solid white;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.boton-principal,
+.boton-informacion {
+    background-color: #097FD9;
+    border: none;
+}
+
+.boton-secundario {
+    background-color: #090707;
+    border: 2px solid white;
+}
+
+.boton-principal:hover,
+.boton-secundario:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.boton-informacion:hover{
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
+    h4{
+        font-size: 1rem;
+    }
+
+    p, button, a, label{
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    h4{
+        font-size: 0.85rem;
+    }
+}
